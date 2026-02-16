@@ -1,0 +1,147 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shane J. Li} \\ \vspace{1pt}
+    \small +1 (984) 999-8251 $|$ \href{mailto:juntao540@gmail.com}{\underline{shane.juntao.li@gmail.com}} $|$ 
+    Chapel Hill, NC $|$
+    \href{www.linkedin.com/in/shane-juntao-li}{\underline{www.linkedin.com/in/shane-juntao-li}} 
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{University of North Carolina - Chapel Hill}}{Aug 2023 -- Dec 2025}
+    \resumeItemListStart
+      \resumeItem{Bachelor's in Computer Science, GPA: 3.8/4.0}
+      \resumeItem{Relevant coursework: Data Structures \& Algorithms, Operating Systems, Systems Programming, Computer Organization, Cryptography, Models of Computation}
+      \resumeItem{Supporting math coursework: Differential Equations, Probability, Applied Calculus}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+          {\textbf{PMG} $|$ \emph{Software Engineer}}{Jan 2026 -- Present}
+          \resumeItemListStart
+            \resumeItem{Contributed to Slack bot project by implementing channel creation functionality to streamline team communication workflows.}
+            \resumeItem{Currently onboarding to Creative Studio team, receiving comprehensive training on media management systems and digital asset workflows.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Arch Capital Group} $|$ \emph{Software Development \& Architect Intern}}{Jun 2025 -- Dec 2025}
+    \resumeItemListStart
+      \resumeItem{Built and refactored 6+ Spring Boot API endpoints and resolved 3+ backend defects by integrating with internal systems like Guidewire, RMA, and ElasticSearch with other data in MySQL Database.}
+      \resumeItem{Integrated AWS Bedrock with Claude model to implement LLM-powered capabilities, enhancing application functionality with AI-driven features on AWS cloud infrastructure.}
+      \resumeItem{Deployed 5+ docker images daily using Github actions with kubernetes and Terraform configurations for feature and defect testing. Published 4+ Confluence technical writings for troubleshooting and solution design. }
+      \resumeItem{Enhanced Angular (TypeScript + NodeJS) UI with 40+ unit/integration tests utilizing containerization and CI/CD workflow in software development lifecycle. }
+    \resumeItemListEnd
+
+
+
+  \resumeProjectHeading
+    {\textbf{UNC Charlotte} $|$ \emph{Research Assistant}}{Sep 2022 -- Jul 2023}
+    \resumeItemListStart
+      \resumeItem{Implemented advanced privacy protocols (RAPPOR, LDP, ULDP) improving effectiveness by 30\% using large datasets.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+
+  \resumeProjectHeading
+  {\textbf{\href{https://apps.microsoft.com/detail/9pcj0v1kcswm?hl=en-US\&gl=US}{RNG Capitalist}} $|$ \emph{Flutter/Dart, Cross-Platform}}{Chapel Hill, NC}
+    \resumeItemListStart
+      \resumeItem{Developed a cross-platform productivity tool that schedules tasks based on past spending decisions using behavioral economics principles.}
+      \resumeItem{Implemented in Flutter/Dart with full desktop and mobile support.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://ecosprout.fun/}{EcoSprout}} $|$ \emph{Software Front-end}}{Chapel Hill, NC}
+    \resumeItemListStart
+      \resumeItem{Architected a React 18 single-page application with home, tutorial, single-player, and multiplayer modes featuring neighbor-based crop combat, randomized weather, and an inventory-driven market economy.}
+      \resumeItem{Extended functionality into a turn-based competitive mode with per-tile ownership, rain-boosted growth, win condition enforcement, and dynamically styled player-branded boards.}
+    \resumeItemListEnd
+\resumeProjectHeading
+  {\textbf{\href{https://cerrig.pro/}{Cerrig.pro}} $|$ \emph{WordPress, Web Development}}{Chapel Hill, NC}
+\resumeItemListStart
+  \resumeItem{Built and launched a fully functional professional website independently using WordPress, handling both design and development.}
+  \resumeItem{Customized themes, plugins, and site architecture to create a responsive, user-friendly experience optimized for both desktop and mobile.}
+  \resumeItem{Managed deployment, content integration, and SEO optimization to ensure visibility and performance.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+   \textbf{Languages}{: Java, Python, TypeScript, JavaScript, C, C++, SQL, HTML/CSS, MATLAB} \\
+   \textbf{Frameworks/Tools}{: React.js, Flask, Spring Boot, Docker, Git, AWS, Linux/Unix, MySQL, Agile, DevOps} \\
+   \textbf{Other}{: Networking, Data Science, Project Management, Test Automation, System Integration, Troubleshooting}
+  }}
+\end{itemize}
+
+\end{document}
